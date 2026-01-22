@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical.Growth - Assessoria de Marketing Médico</title>
+  <meta name="description" content="Especialistas em aquisição, funil e vendas para incorporadoras.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            even: {
+              primary: '#1693e3',   // Azul claro vibrante
+              secondary: '#053a6c', // Azul médio institucional
+              tertiary: '#031f34',  // Azul muito escuro (fundo)
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            scroll: 'scroll 40s linear infinite',
+            'scroll-fast': 'scroll 10s linear infinite',
+          },
+          keyframes: {
+            scroll: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Animated Moving Light Effect */
+    @keyframes moveLight {
+
+      0%,
+      100% {
+        left: -30%;
+      }
+
+      50% {
+        left: 130%;
+      }
+    }
+
+    .animated-light {
+      animation: moveLight 12s ease-in-out infinite;
+    }
+  </style>
+
+  <link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-CPrSFlmj.js"></script>
+</head>
+
+<body class="bg-black text-white">
+  <div id="root"></div>
+</body>
+
+</html>
